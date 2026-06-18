@@ -183,13 +183,3 @@ Mertens & Ravn 2013 (AER) — proxy SVAR; same instrument approach covered in
 Carriero, Clark, Marcellino 2019 (J Econometrics) — large BVAR with SV;
     covered in part by Banbura et al 2010 and Giannone-Lenza-Primiceri 2015.
 
-================================================================
-NEXT STEPS
-================================================================
-
-For BAM/Citadel/Point72 interview prep: start with Path A.
-For independent macro research macro work: pair Path A with Path B.
-For FYP: integrate Path C as the regime overlay module foundation.
-
----
-*Nicholas Hong | Built for educational and research purposes. Not financial advice.*
