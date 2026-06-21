@@ -1,0 +1,47 @@
+{
+  "sample": "1994-04-01 to 2026-01-01",
+  "n_quarters": 128,
+  "oos_origins_from": "2011-10-01",
+  "forward_selection_path": [
+    "CORE",
+    "CORE+OIL(x)"
+  ],
+  "forward_selection_winner": "CORE+OIL(x)",
+  "eligible_winner_by_avg_rank": "CORE+OIL(x)",
+  "winner_spec": {
+    "endog": [
+      "GDP",
+      "INF",
+      "POLICY",
+      "FX"
+    ],
+    "exog": [
+      "OIL"
+    ]
+  },
+  "mcs_included_h1": {
+    "GDP": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "RW"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "RW"
+    ],
+    "POLICY": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "RW"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)"
+    ]
+  }
+}

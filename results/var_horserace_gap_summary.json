@@ -1,0 +1,45 @@
+{
+  "sample": "1994-04-01 to 2025-10-01",
+  "n": 127,
+  "lvl_forward_winner": [
+    "WEALTH",
+    "OIL(x)",
+    "TFP(x)"
+  ],
+  "gap_forward_winner": [
+    "WEALTH",
+    "OIL(x)"
+  ],
+  "best_eligible": "LVL:core+OIL(x)",
+  "mcs_h1": {
+    "GDP": [
+      "AR(BIC)",
+      "GAP:core",
+      "GAP:core+OIL(x)",
+      "GAP:core+TFP(x)",
+      "LVL:core",
+      "LVL:core+OIL(x)",
+      "LVL:core+TFP(x)",
+      "RW"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "GAP:core",
+      "GAP:core+OIL(x)",
+      "GAP:core+TFP(x)",
+      "LVL:core",
+      "LVL:core+OIL(x)",
+      "LVL:core+TFP(x)",
+      "RW"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "GAP:core",
+      "GAP:core+OIL(x)",
+      "GAP:core+TFP(x)",
+      "LVL:core",
+      "LVL:core+OIL(x)",
+      "LVL:core+TFP(x)"
+    ]
+  }
+}

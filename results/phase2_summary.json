@@ -1,0 +1,66 @@
+{
+  "sample": "1994-04-01 to 2025-10-01",
+  "n": 127,
+  "best_mean_relRMSE_h1": "AR(BIC)",
+  "mcs_h1": {
+    "GDP": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "POLICY": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "Ridge:small",
+      "Ridge:wide"
+    ]
+  }
+}

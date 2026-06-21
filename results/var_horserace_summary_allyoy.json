@@ -1,0 +1,82 @@
+{
+  "sample": "1995-01-01 to 2025-10-01",
+  "n_quarters": 124,
+  "oos_origins_from": "2012-01-01",
+  "forward_selection_path": [
+    "CORE",
+    "CORE+OIL(x)",
+    "CORE+WEALTH+OIL(x)"
+  ],
+  "forward_selection_winner": "CORE+WEALTH+OIL(x)",
+  "eligible_winner_by_avg_rank": "CORE+WEALTH+OIL(x)",
+  "winner_spec": {
+    "endog": [
+      "GDP",
+      "INF",
+      "POLICY",
+      "FX",
+      "WEALTH"
+    ],
+    "exog": [
+      "OIL"
+    ]
+  },
+  "mcs_included_h1": {
+    "GDP": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+CONS",
+      "CORE+EXPORTS",
+      "CORE+FISCAL",
+      "CORE+HOUSING",
+      "CORE+INV",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "CORE+WEALTH",
+      "CORE+WEALTH+OIL(x)",
+      "RW"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+CONS",
+      "CORE+EXPORTS",
+      "CORE+FISCAL",
+      "CORE+HOUSING",
+      "CORE+INV",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "CORE+WEALTH",
+      "CORE+WEALTH+OIL(x)",
+      "RW"
+    ],
+    "POLICY": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+CONS",
+      "CORE+EXPORTS",
+      "CORE+FISCAL",
+      "CORE+HOUSING",
+      "CORE+INV",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "CORE+WEALTH",
+      "CORE+WEALTH+OIL(x)",
+      "RW"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+CONS",
+      "CORE+EXPORTS",
+      "CORE+FISCAL",
+      "CORE+HOUSING",
+      "CORE+INV",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "CORE+WEALTH",
+      "CORE+WEALTH+OIL(x)",
+      "RW"
+    ]
+  }
+}
