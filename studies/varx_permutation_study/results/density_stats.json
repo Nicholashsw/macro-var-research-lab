@@ -1,0 +1,518 @@
+{
+ "naive": {
+  "gdp": {
+   "1": {
+    "all": {
+     "pure_var": {
+      "log_score": -6.4938,
+      "crps": 2.2283,
+      "cov90": 0.877,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -6.6126,
+      "crps": 2.1983,
+      "cov90": 0.862,
+      "ls_dm_p_vs_var": 0.579
+     },
+     "all4_raw": {
+      "log_score": -13.0096,
+      "crps": 1.9983,
+      "cov90": 0.677,
+      "ls_dm_p_vs_var": 0.219
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.0763,
+      "crps": 1.0696,
+      "cov90": 0.917,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.0804,
+      "crps": 1.0802,
+      "cov90": 0.9,
+      "ls_dm_p_vs_var": 0.753
+     },
+     "all4_raw": {
+      "log_score": -2.1834,
+      "crps": 0.9838,
+      "cov90": 0.733,
+      "ls_dm_p_vs_var": 0.528
+     }
+    }
+   },
+   "4": {
+    "all": {
+     "pure_var": {
+      "log_score": -5.2655,
+      "crps": 2.1168,
+      "cov90": 0.935,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -5.4693,
+      "crps": 2.1235,
+      "cov90": 0.903,
+      "ls_dm_p_vs_var": 0.269
+     },
+     "all4_raw": {
+      "log_score": -15.8726,
+      "crps": 2.0852,
+      "cov90": 0.677,
+      "ls_dm_p_vs_var": 0.261
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.1196,
+      "crps": 1.0734,
+      "cov90": 0.982,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.1202,
+      "crps": 1.079,
+      "cov90": 0.965,
+      "ls_dm_p_vs_var": 0.972
+     },
+     "all4_raw": {
+      "log_score": -2.2057,
+      "crps": 0.9871,
+      "cov90": 0.737,
+      "ls_dm_p_vs_var": 0.668
+     }
+    }
+   },
+   "8": {
+    "all": {
+     "pure_var": {
+      "log_score": -5.2519,
+      "crps": 2.1018,
+      "cov90": 0.914,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -5.4261,
+      "crps": 2.0939,
+      "cov90": 0.914,
+      "ls_dm_p_vs_var": 0.317
+     },
+     "all4_raw": {
+      "log_score": -16.4838,
+      "crps": 2.1098,
+      "cov90": 0.69,
+      "ls_dm_p_vs_var": 0.262
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.0549,
+      "crps": 0.9901,
+      "cov90": 0.962,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.0354,
+      "crps": 0.9791,
+      "cov90": 0.962,
+      "ls_dm_p_vs_var": 0.0
+     },
+     "all4_raw": {
+      "log_score": -2.1138,
+      "crps": 0.9432,
+      "cov90": 0.755,
+      "ls_dm_p_vs_var": 0.785
+     }
+    }
+   }
+  },
+  "inf": {
+   "1": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.271,
+      "crps": 0.5233,
+      "cov90": 0.815,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.1708,
+      "crps": 0.5075,
+      "cov90": 0.738,
+      "ls_dm_p_vs_var": 0.64
+     },
+     "all4_raw": {
+      "log_score": -2.4528,
+      "crps": 0.5235,
+      "cov90": 0.738,
+      "ls_dm_p_vs_var": 0.026
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -1.2637,
+      "crps": 0.3957,
+      "cov90": 0.867,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -1.3877,
+      "crps": 0.4031,
+      "cov90": 0.783,
+      "ls_dm_p_vs_var": 0.111
+     },
+     "all4_raw": {
+      "log_score": -1.4352,
+      "crps": 0.4093,
+      "cov90": 0.783,
+      "ls_dm_p_vs_var": 0.036
+     }
+    }
+   },
+   "4": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.3285,
+      "crps": 0.6267,
+      "cov90": 0.79,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.6406,
+      "crps": 0.6306,
+      "cov90": 0.79,
+      "ls_dm_p_vs_var": 0.171
+     },
+     "all4_raw": {
+      "log_score": -2.7831,
+      "crps": 0.6449,
+      "cov90": 0.774,
+      "ls_dm_p_vs_var": 0.091
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.2199,
+      "crps": 0.5923,
+      "cov90": 0.825,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.5137,
+      "crps": 0.5973,
+      "cov90": 0.825,
+      "ls_dm_p_vs_var": 0.23
+     },
+     "all4_raw": {
+      "log_score": -2.6338,
+      "crps": 0.6089,
+      "cov90": 0.807,
+      "ls_dm_p_vs_var": 0.124
+     }
+    }
+   },
+   "8": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.9463,
+      "crps": 0.7788,
+      "cov90": 0.759,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -3.4385,
+      "crps": 0.7768,
+      "cov90": 0.759,
+      "ls_dm_p_vs_var": 0.183
+     },
+     "all4_raw": {
+      "log_score": -3.5714,
+      "crps": 0.7882,
+      "cov90": 0.759,
+      "ls_dm_p_vs_var": 0.165
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.9349,
+      "crps": 0.7649,
+      "cov90": 0.792,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -3.4175,
+      "crps": 0.7608,
+      "cov90": 0.792,
+      "ls_dm_p_vs_var": 0.209
+     },
+     "all4_raw": {
+      "log_score": -3.5507,
+      "crps": 0.7729,
+      "cov90": 0.792,
+      "ls_dm_p_vs_var": 0.188
+     }
+    }
+   }
+  }
+ },
+ "fair": {
+  "gdp": {
+   "1": {
+    "all": {
+     "pure_var": {
+      "log_score": -6.4938,
+      "crps": 2.2283,
+      "cov90": 0.877,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -6.2978,
+      "crps": 2.1986,
+      "cov90": 0.877,
+      "ls_dm_p_vs_var": 0.472
+     },
+     "all4_raw": {
+      "log_score": -4.7776,
+      "crps": 1.9652,
+      "cov90": 0.908,
+      "ls_dm_p_vs_var": 0.352
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.0763,
+      "crps": 1.0696,
+      "cov90": 0.917,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.0853,
+      "crps": 1.0821,
+      "cov90": 0.917,
+      "ls_dm_p_vs_var": 0.406
+     },
+     "all4_raw": {
+      "log_score": -2.0475,
+      "crps": 0.9995,
+      "cov90": 0.95,
+      "ls_dm_p_vs_var": 0.359
+     }
+    }
+   },
+   "4": {
+    "all": {
+     "pure_var": {
+      "log_score": -5.2655,
+      "crps": 2.1168,
+      "cov90": 0.935,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -5.3123,
+      "crps": 2.1258,
+      "cov90": 0.903,
+      "ls_dm_p_vs_var": 0.197
+     },
+     "all4_raw": {
+      "log_score": -5.4505,
+      "crps": 2.0616,
+      "cov90": 0.919,
+      "ls_dm_p_vs_var": 0.393
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.1196,
+      "crps": 1.0734,
+      "cov90": 0.982,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.1279,
+      "crps": 1.0835,
+      "cov90": 0.965,
+      "ls_dm_p_vs_var": 0.361
+     },
+     "all4_raw": {
+      "log_score": -2.0617,
+      "crps": 1.0073,
+      "cov90": 0.965,
+      "ls_dm_p_vs_var": 0.18
+     }
+    }
+   },
+   "8": {
+    "all": {
+     "pure_var": {
+      "log_score": -5.2519,
+      "crps": 2.1018,
+      "cov90": 0.914,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -5.2825,
+      "crps": 2.0983,
+      "cov90": 0.914,
+      "ls_dm_p_vs_var": 0.33
+     },
+     "all4_raw": {
+      "log_score": -5.4878,
+      "crps": 2.0988,
+      "cov90": 0.914,
+      "ls_dm_p_vs_var": 0.273
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.0549,
+      "crps": 0.9901,
+      "cov90": 0.962,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.0508,
+      "crps": 0.9859,
+      "cov90": 0.962,
+      "ls_dm_p_vs_var": 0.185
+     },
+     "all4_raw": {
+      "log_score": -2.0544,
+      "crps": 0.9811,
+      "cov90": 0.962,
+      "ls_dm_p_vs_var": 0.977
+     }
+    }
+   }
+  },
+  "inf": {
+   "1": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.271,
+      "crps": 0.5233,
+      "cov90": 0.815,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -1.9481,
+      "crps": 0.5038,
+      "cov90": 0.785,
+      "ls_dm_p_vs_var": 0.203
+     },
+     "all4_raw": {
+      "log_score": -2.1855,
+      "crps": 0.5197,
+      "cov90": 0.754,
+      "ls_dm_p_vs_var": 0.381
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -1.2637,
+      "crps": 0.3957,
+      "cov90": 0.867,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -1.2805,
+      "crps": 0.4006,
+      "cov90": 0.833,
+      "ls_dm_p_vs_var": 0.34
+     },
+     "all4_raw": {
+      "log_score": -1.3178,
+      "crps": 0.4066,
+      "cov90": 0.8,
+      "ls_dm_p_vs_var": 0.324
+     }
+    }
+   },
+   "4": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.3285,
+      "crps": 0.6267,
+      "cov90": 0.79,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.3156,
+      "crps": 0.626,
+      "cov90": 0.79,
+      "ls_dm_p_vs_var": 0.8
+     },
+     "all4_raw": {
+      "log_score": -2.366,
+      "crps": 0.6377,
+      "cov90": 0.79,
+      "ls_dm_p_vs_var": 0.211
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.2199,
+      "crps": 0.5923,
+      "cov90": 0.825,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.2085,
+      "crps": 0.5935,
+      "cov90": 0.825,
+      "ls_dm_p_vs_var": 0.83
+     },
+     "all4_raw": {
+      "log_score": -2.242,
+      "crps": 0.6025,
+      "cov90": 0.825,
+      "ls_dm_p_vs_var": 0.379
+     }
+    }
+   },
+   "8": {
+    "all": {
+     "pure_var": {
+      "log_score": -2.9463,
+      "crps": 0.7788,
+      "cov90": 0.759,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -3.01,
+      "crps": 0.7721,
+      "cov90": 0.759,
+      "ls_dm_p_vs_var": 0.325
+     },
+     "all4_raw": {
+      "log_score": -3.0404,
+      "crps": 0.7812,
+      "cov90": 0.776,
+      "ls_dm_p_vs_var": 0.248
+     }
+    },
+    "excovid": {
+     "pure_var": {
+      "log_score": -2.9349,
+      "crps": 0.7649,
+      "cov90": 0.792,
+      "ls_dm_p_vs_var": NaN
+     },
+     "oil_raw": {
+      "log_score": -2.9948,
+      "crps": 0.7568,
+      "cov90": 0.792,
+      "ls_dm_p_vs_var": 0.367
+     },
+     "all4_raw": {
+      "log_score": -3.0283,
+      "crps": 0.7667,
+      "cov90": 0.811,
+      "ls_dm_p_vs_var": 0.266
+     }
+    }
+   }
+  }
+ }
+}

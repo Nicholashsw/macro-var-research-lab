@@ -1,0 +1,278 @@
+{
+ "gdp": {
+  "all": {
+   "1": {
+    "plugin+gauss": {
+     "cov90": 0.877,
+     "cov50": 0.523,
+     "crps": 2.2308
+    },
+    "plugin+emp": {
+     "cov90": 0.877,
+     "cov50": 0.446,
+     "crps": 2.2481
+    },
+    "bayes+gauss": {
+     "cov90": 0.908,
+     "cov50": 0.569,
+     "crps": 2.228
+    },
+    "bayes+emp": {
+     "cov90": 0.862,
+     "cov50": 0.492,
+     "crps": 2.2103
+    }
+   },
+   "4": {
+    "plugin+gauss": {
+     "cov90": 0.919,
+     "cov50": 0.629,
+     "crps": 2.1143
+    },
+    "plugin+emp": {
+     "cov90": 0.903,
+     "cov50": 0.565,
+     "crps": 2.1189
+    },
+    "bayes+gauss": {
+     "cov90": 0.935,
+     "cov50": 0.677,
+     "crps": 2.1423
+    },
+    "bayes+emp": {
+     "cov90": 0.919,
+     "cov50": 0.629,
+     "crps": 2.1126
+    }
+   },
+   "8": {
+    "plugin+gauss": {
+     "cov90": 0.931,
+     "cov50": 0.603,
+     "crps": 2.1082
+    },
+    "plugin+emp": {
+     "cov90": 0.914,
+     "cov50": 0.569,
+     "crps": 2.0917
+    },
+    "bayes+gauss": {
+     "cov90": 0.948,
+     "cov50": 0.672,
+     "crps": 2.1403
+    },
+    "bayes+emp": {
+     "cov90": 0.914,
+     "cov50": 0.638,
+     "crps": 2.1138
+    }
+   }
+  },
+  "excovid": {
+   "1": {
+    "plugin+gauss": {
+     "cov90": 0.917,
+     "cov50": 0.567,
+     "crps": 1.0673
+    },
+    "plugin+emp": {
+     "cov90": 0.917,
+     "cov50": 0.483,
+     "crps": 1.0774
+    },
+    "bayes+gauss": {
+     "cov90": 0.95,
+     "cov50": 0.583,
+     "crps": 1.0915
+    },
+    "bayes+emp": {
+     "cov90": 0.9,
+     "cov50": 0.517,
+     "crps": 1.0643
+    }
+   },
+   "4": {
+    "plugin+gauss": {
+     "cov90": 0.965,
+     "cov50": 0.684,
+     "crps": 1.0706
+    },
+    "plugin+emp": {
+     "cov90": 0.965,
+     "cov50": 0.614,
+     "crps": 1.072
+    },
+    "bayes+gauss": {
+     "cov90": 0.982,
+     "cov50": 0.719,
+     "crps": 1.1047
+    },
+    "bayes+emp": {
+     "cov90": 0.965,
+     "cov50": 0.684,
+     "crps": 1.0716
+    }
+   },
+   "8": {
+    "plugin+gauss": {
+     "cov90": 0.981,
+     "cov50": 0.66,
+     "crps": 0.9956
+    },
+    "plugin+emp": {
+     "cov90": 0.962,
+     "cov50": 0.623,
+     "crps": 0.9825
+    },
+    "bayes+gauss": {
+     "cov90": 1.0,
+     "cov50": 0.736,
+     "crps": 1.0394
+    },
+    "bayes+emp": {
+     "cov90": 0.962,
+     "cov50": 0.698,
+     "crps": 1.0066
+    }
+   }
+  }
+ },
+ "inf": {
+  "all": {
+   "1": {
+    "plugin+gauss": {
+     "cov90": 0.8,
+     "cov50": 0.369,
+     "crps": 0.5249
+    },
+    "plugin+emp": {
+     "cov90": 0.738,
+     "cov50": 0.4,
+     "crps": 0.5286
+    },
+    "bayes+gauss": {
+     "cov90": 0.846,
+     "cov50": 0.446,
+     "crps": 0.509
+    },
+    "bayes+emp": {
+     "cov90": 0.769,
+     "cov50": 0.415,
+     "crps": 0.516
+    }
+   },
+   "4": {
+    "plugin+gauss": {
+     "cov90": 0.79,
+     "cov50": 0.452,
+     "crps": 0.6299
+    },
+    "plugin+emp": {
+     "cov90": 0.79,
+     "cov50": 0.435,
+     "crps": 0.6333
+    },
+    "bayes+gauss": {
+     "cov90": 0.855,
+     "cov50": 0.484,
+     "crps": 0.6167
+    },
+    "bayes+emp": {
+     "cov90": 0.823,
+     "cov50": 0.468,
+     "crps": 0.6193
+    }
+   },
+   "8": {
+    "plugin+gauss": {
+     "cov90": 0.759,
+     "cov50": 0.466,
+     "crps": 0.7828
+    },
+    "plugin+emp": {
+     "cov90": 0.759,
+     "cov50": 0.431,
+     "crps": 0.7833
+    },
+    "bayes+gauss": {
+     "cov90": 0.793,
+     "cov50": 0.517,
+     "crps": 0.7782
+    },
+    "bayes+emp": {
+     "cov90": 0.776,
+     "cov50": 0.483,
+     "crps": 0.7775
+    }
+   }
+  },
+  "excovid": {
+   "1": {
+    "plugin+gauss": {
+     "cov90": 0.85,
+     "cov50": 0.4,
+     "crps": 0.3963
+    },
+    "plugin+emp": {
+     "cov90": 0.783,
+     "cov50": 0.433,
+     "crps": 0.4009
+    },
+    "bayes+gauss": {
+     "cov90": 0.9,
+     "cov50": 0.483,
+     "crps": 0.396
+    },
+    "bayes+emp": {
+     "cov90": 0.817,
+     "cov50": 0.45,
+     "crps": 0.3999
+    }
+   },
+   "4": {
+    "plugin+gauss": {
+     "cov90": 0.825,
+     "cov50": 0.456,
+     "crps": 0.5957
+    },
+    "plugin+emp": {
+     "cov90": 0.825,
+     "cov50": 0.439,
+     "crps": 0.6006
+    },
+    "bayes+gauss": {
+     "cov90": 0.895,
+     "cov50": 0.491,
+     "crps": 0.5831
+    },
+    "bayes+emp": {
+     "cov90": 0.86,
+     "cov50": 0.474,
+     "crps": 0.5849
+    }
+   },
+   "8": {
+    "plugin+gauss": {
+     "cov90": 0.792,
+     "cov50": 0.472,
+     "crps": 0.769
+    },
+    "plugin+emp": {
+     "cov90": 0.792,
+     "cov50": 0.434,
+     "crps": 0.7698
+    },
+    "bayes+gauss": {
+     "cov90": 0.83,
+     "cov50": 0.528,
+     "crps": 0.7651
+    },
+    "bayes+emp": {
+     "cov90": 0.811,
+     "cov50": 0.491,
+     "crps": 0.7636
+    }
+   }
+  }
+ }
+}

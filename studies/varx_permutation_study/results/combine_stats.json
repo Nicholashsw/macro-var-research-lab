@@ -1,0 +1,30 @@
+{
+ "oil": {
+  "gdp": {
+   "equal_vs_best_mean_pct": 0.42,
+   "invmse_vs_best_mean_pct": 0.43,
+   "beta_id_significant_cells": 0,
+   "n_cells": 6
+  },
+  "inf": {
+   "equal_vs_best_mean_pct": 0.81,
+   "invmse_vs_best_mean_pct": 0.84,
+   "beta_id_significant_cells": 0,
+   "n_cells": 6
+  }
+ },
+ "monetary": {
+  "gdp": {
+   "equal_vs_best_mean_pct": 0.49,
+   "invmse_vs_best_mean_pct": 0.49,
+   "beta_id_significant_cells": 0,
+   "n_cells": 6
+  },
+  "inf": {
+   "equal_vs_best_mean_pct": 0.25,
+   "invmse_vs_best_mean_pct": 0.24,
+   "beta_id_significant_cells": 2,
+   "n_cells": 6
+  }
+ }
+}

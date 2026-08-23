@@ -1,0 +1,282 @@
+{
+ "gdp": {
+  "1": {
+   "all": {
+    "pure_var": {
+     "rmse": 6.7853,
+     "r2_oos": 0.0277,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 6.6592,
+     "r2_oos": 0.0635,
+     "dm_p_vs_var": 0.493
+    },
+    "oil_surp": {
+     "rmse": 6.7932,
+     "r2_oos": 0.0254,
+     "dm_p_vs_var": 0.812
+    },
+    "oil_news": {
+     "rmse": 6.9058,
+     "r2_oos": -0.0071,
+     "dm_p_vs_var": 0.174
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 1.8977,
+     "r2_oos": -0.0782,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.9206,
+     "r2_oos": -0.1043,
+     "dm_p_vs_var": 0.406
+    },
+    "oil_surp": {
+     "rmse": 1.889,
+     "r2_oos": -0.0683,
+     "dm_p_vs_var": 0.53
+    },
+    "oil_news": {
+     "rmse": 1.9071,
+     "r2_oos": -0.0889,
+     "dm_p_vs_var": 0.623
+    }
+   }
+  },
+  "4": {
+   "all": {
+    "pure_var": {
+     "rmse": 6.0664,
+     "r2_oos": -0.014,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 6.0698,
+     "r2_oos": -0.0152,
+     "dm_p_vs_var": 0.678
+    },
+    "oil_surp": {
+     "rmse": 6.0638,
+     "r2_oos": -0.0132,
+     "dm_p_vs_var": 0.444
+    },
+    "oil_news": {
+     "rmse": 6.0798,
+     "r2_oos": -0.0185,
+     "dm_p_vs_var": 0.097
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 1.9389,
+     "r2_oos": -0.1895,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.9694,
+     "r2_oos": -0.2273,
+     "dm_p_vs_var": 0.163
+    },
+    "oil_surp": {
+     "rmse": 1.9397,
+     "r2_oos": -0.1905,
+     "dm_p_vs_var": 0.948
+    },
+    "oil_news": {
+     "rmse": 1.9595,
+     "r2_oos": -0.2149,
+     "dm_p_vs_var": 0.079
+    }
+   }
+  },
+  "8": {
+   "all": {
+    "pure_var": {
+     "rmse": 6.1743,
+     "r2_oos": 0.0051,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 6.1726,
+     "r2_oos": 0.0056,
+     "dm_p_vs_var": 0.496
+    },
+    "oil_surp": {
+     "rmse": 6.1736,
+     "r2_oos": 0.0053,
+     "dm_p_vs_var": 0.76
+    },
+    "oil_news": {
+     "rmse": 6.1782,
+     "r2_oos": 0.0038,
+     "dm_p_vs_var": 0.366
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 1.6865,
+     "r2_oos": 0.0004,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.6818,
+     "r2_oos": 0.006,
+     "dm_p_vs_var": 0.615
+    },
+    "oil_surp": {
+     "rmse": 1.6796,
+     "r2_oos": 0.0085,
+     "dm_p_vs_var": 0.286
+    },
+    "oil_news": {
+     "rmse": 1.6919,
+     "r2_oos": -0.006,
+     "dm_p_vs_var": 0.663
+    }
+   }
+  }
+ },
+ "inf": {
+  "1": {
+   "all": {
+    "pure_var": {
+     "rmse": 1.0283,
+     "r2_oos": -0.4438,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 0.9559,
+     "r2_oos": -0.2476,
+     "dm_p_vs_var": 0.236
+    },
+    "oil_surp": {
+     "rmse": 1.0015,
+     "r2_oos": -0.3696,
+     "dm_p_vs_var": 0.217
+    },
+    "oil_news": {
+     "rmse": 0.9826,
+     "r2_oos": -0.3184,
+     "dm_p_vs_var": 0.172
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 0.7566,
+     "r2_oos": -0.0127,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 0.7686,
+     "r2_oos": -0.0453,
+     "dm_p_vs_var": 0.104
+    },
+    "oil_surp": {
+     "rmse": 0.7589,
+     "r2_oos": -0.019,
+     "dm_p_vs_var": 0.899
+    },
+    "oil_news": {
+     "rmse": 0.761,
+     "r2_oos": -0.0246,
+     "dm_p_vs_var": 0.689
+    }
+   }
+  },
+  "4": {
+   "all": {
+    "pure_var": {
+     "rmse": 1.2296,
+     "r2_oos": -0.0588,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.2182,
+     "r2_oos": -0.0393,
+     "dm_p_vs_var": 0.55
+    },
+    "oil_surp": {
+     "rmse": 1.2455,
+     "r2_oos": -0.0864,
+     "dm_p_vs_var": 0.139
+    },
+    "oil_news": {
+     "rmse": 1.2631,
+     "r2_oos": -0.1173,
+     "dm_p_vs_var": 0.16
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 1.1987,
+     "r2_oos": -0.0499,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.1896,
+     "r2_oos": -0.034,
+     "dm_p_vs_var": 0.643
+    },
+    "oil_surp": {
+     "rmse": 1.2173,
+     "r2_oos": -0.0829,
+     "dm_p_vs_var": 0.118
+    },
+    "oil_news": {
+     "rmse": 1.2333,
+     "r2_oos": -0.1114,
+     "dm_p_vs_var": 0.156
+    }
+   }
+  },
+  "8": {
+   "all": {
+    "pure_var": {
+     "rmse": 1.4454,
+     "r2_oos": -0.0686,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.4409,
+     "r2_oos": -0.062,
+     "dm_p_vs_var": 0.317
+    },
+    "oil_surp": {
+     "rmse": 1.4497,
+     "r2_oos": -0.0751,
+     "dm_p_vs_var": 0.241
+    },
+    "oil_news": {
+     "rmse": 1.4448,
+     "r2_oos": -0.0677,
+     "dm_p_vs_var": 0.942
+    }
+   },
+   "excovid": {
+    "pure_var": {
+     "rmse": 1.4426,
+     "r2_oos": -0.0747,
+     "dm_p_vs_var": NaN
+    },
+    "oil_raw": {
+     "rmse": 1.4373,
+     "r2_oos": -0.0668,
+     "dm_p_vs_var": 0.264
+    },
+    "oil_surp": {
+     "rmse": 1.4474,
+     "r2_oos": -0.0818,
+     "dm_p_vs_var": 0.237
+    },
+    "oil_news": {
+     "rmse": 1.4425,
+     "r2_oos": -0.0745,
+     "dm_p_vs_var": 0.99
+    }
+   }
+  }
+ }
+}

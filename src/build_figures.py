@@ -3,14 +3,17 @@ Build the diagrams that will be embedded in the macro logic PDF.
 Each saved as a high-DPI PNG.
 """
 
+import os
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 import numpy as np
 from pathlib import Path
 
-FIG = Path("/home/claude/macro_pdf/figures")
-FIG.mkdir(exist_ok=True)
+# repo-relative; outputs/ is gitignored so a re-run never clobbers committed figures.
+ROOT = Path(os.environ.get("REPRO_ROOT", Path(__file__).resolve().parent.parent))
+FIG = ROOT / "outputs" / "figs"
+FIG.mkdir(parents=True, exist_ok=True)
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans",
@@ -452,7 +455,7 @@ def coefficient_signs():
         (r"$i_t = r^* + \pi_t + \phi_\pi(\pi_t-\pi^*) + \phi_y \tilde y_t$",
          r"$\phi_\pi$", "$+$ ($>1$, Taylor principle)", "Above-target $\\pi$ $\\to$ raise $i$ more"),
         (r"NX$_t = \gamma_1 y^*_t - \gamma_2 q_t$",
-         r"$\gamma_2$ on REER $q$", "$+$ (so $-\gamma_2$ on $q$)", "Stronger FX $\\to$ lower exports"),
+         r"$\gamma_2$ on REER $q$", r"$+$ (so $-\gamma_2$ on $q$)", "Stronger FX $\\to$ lower exports"),
         ("UIP:  $i_{US} - i^* = E_t[\\Delta s_{t+1}]$",
          r"slope of $\Delta s$", "$+$ on $i_{US}$", "Higher US rate $\\to$ expected USD depreciation"),
     ]

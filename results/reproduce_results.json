@@ -1,0 +1,476 @@
+{
+  "sample_level": {
+    "n": 128,
+    "start": "1994-04-01",
+    "end": "2026-01-01"
+  },
+  "sample_yoy": {
+    "n": 125,
+    "start": "1995-01-01",
+    "end": "2026-01-01"
+  },
+  "oos": {
+    "first_origin": "2011-10-01",
+    "n_origins_h1": 57,
+    "n_origins_h4": 54,
+    "start_frac": 0.55,
+    "lag_p": 2
+  },
+  "johansen": {
+    "rank": 0,
+    "trace": [
+      46.0,
+      26.68,
+      10.57,
+      3.51
+    ],
+    "crit5": [
+      47.85,
+      29.8,
+      15.49,
+      3.84
+    ]
+  },
+  "phaseA_forward_path": [
+    [
+      "CORE",
+      1.0431
+    ],
+    [
+      "WEALTH",
+      0.9452
+    ],
+    [
+      "OIL",
+      0.9117
+    ]
+  ],
+  "phaseA_winner_eligible": "CORE+OIL(x)",
+  "phaseA_table": [
+    {
+      "spec": "CORE",
+      "mean_h1": 1.0431,
+      "mean_h4": 0.9318,
+      "T_over_k": 3.5,
+      "stable": true,
+      "whiteness_p": 0.4498,
+      "passes": true,
+      "GDP_h1": 0.8996,
+      "INF_h1": 1.1821,
+      "POLICY_h1": 1.2044,
+      "FX_h1": 0.8861,
+      "GDP_h4": 0.7202,
+      "INF_h4": 1.0793,
+      "POLICY_h4": 1.1297,
+      "FX_h4": 0.7978
+    },
+    {
+      "spec": "CORE+INV",
+      "mean_h1": 1.0987,
+      "mean_h4": 0.9864,
+      "T_over_k": 2.29,
+      "stable": true,
+      "whiteness_p": 0.1289,
+      "passes": false,
+      "GDP_h1": 0.9571,
+      "INF_h1": 1.2381,
+      "POLICY_h1": 1.3805,
+      "FX_h1": 0.8191,
+      "GDP_h4": 0.7412,
+      "INF_h4": 1.1263,
+      "POLICY_h4": 1.2883,
+      "FX_h4": 0.7898
+    },
+    {
+      "spec": "CORE+CONS",
+      "mean_h1": 1.2311,
+      "mean_h4": 1.6882,
+      "T_over_k": 4.23,
+      "stable": true,
+      "whiteness_p": 0.0,
+      "passes": false,
+      "GDP_h1": 1.1725,
+      "INF_h1": 1.2588,
+      "POLICY_h1": 1.6609,
+      "FX_h1": 0.8324,
+      "GDP_h4": 1.7189,
+      "INF_h4": 1.5371,
+      "POLICY_h4": 2.6728,
+      "FX_h4": 0.8242
+    },
+    {
+      "spec": "CORE+FISCAL",
+      "mean_h1": 1.0854,
+      "mean_h4": 1.0486,
+      "T_over_k": 2.29,
+      "stable": true,
+      "whiteness_p": 0.1877,
+      "passes": false,
+      "GDP_h1": 0.9105,
+      "INF_h1": 1.1823,
+      "POLICY_h1": 1.3967,
+      "FX_h1": 0.8521,
+      "GDP_h4": 0.8022,
+      "INF_h4": 1.1719,
+      "POLICY_h4": 1.4346,
+      "FX_h4": 0.7856
+    },
+    {
+      "spec": "CORE+EXPORTS",
+      "mean_h1": 1.0716,
+      "mean_h4": 0.9994,
+      "T_over_k": 2.29,
+      "stable": true,
+      "whiteness_p": 0.0314,
+      "passes": false,
+      "GDP_h1": 0.8879,
+      "INF_h1": 1.1698,
+      "POLICY_h1": 1.3791,
+      "FX_h1": 0.8497,
+      "GDP_h4": 0.7395,
+      "INF_h4": 1.1268,
+      "POLICY_h4": 1.3484,
+      "FX_h4": 0.783
+    },
+    {
+      "spec": "CORE+WEALTH",
+      "mean_h1": 0.9452,
+      "mean_h4": 0.9019,
+      "T_over_k": 2.29,
+      "stable": true,
+      "whiteness_p": 0.1274,
+      "passes": false,
+      "GDP_h1": 0.7324,
+      "INF_h1": 1.0554,
+      "POLICY_h1": 1.1504,
+      "FX_h1": 0.8425,
+      "GDP_h4": 0.6955,
+      "INF_h4": 1.0665,
+      "POLICY_h4": 1.0693,
+      "FX_h4": 0.7762
+    },
+    {
+      "spec": "CORE+HOUSING",
+      "mean_h1": 1.0357,
+      "mean_h4": 0.918,
+      "T_over_k": 2.29,
+      "stable": true,
+      "whiteness_p": 0.0001,
+      "passes": false,
+      "GDP_h1": 0.8674,
+      "INF_h1": 1.1214,
+      "POLICY_h1": 1.2949,
+      "FX_h1": 0.8591,
+      "GDP_h4": 0.7247,
+      "INF_h4": 1.0388,
+      "POLICY_h4": 1.1225,
+      "FX_h4": 0.7859
+    },
+    {
+      "spec": "CORE+OIL(x)",
+      "mean_h1": 0.9679,
+      "mean_h4": 0.8786,
+      "T_over_k": 3.15,
+      "stable": true,
+      "whiteness_p": 0.1891,
+      "passes": true,
+      "GDP_h1": 0.8375,
+      "INF_h1": 1.0726,
+      "POLICY_h1": 1.1276,
+      "FX_h1": 0.834,
+      "GDP_h4": 0.7028,
+      "INF_h4": 0.9944,
+      "POLICY_h4": 1.0022,
+      "FX_h4": 0.815
+    },
+    {
+      "spec": "CORE+TFP(x)",
+      "mean_h1": 1.0606,
+      "mean_h4": 0.9571,
+      "T_over_k": 3.15,
+      "stable": true,
+      "whiteness_p": 0.518,
+      "passes": true,
+      "GDP_h1": 0.9293,
+      "INF_h1": 1.1843,
+      "POLICY_h1": 1.24,
+      "FX_h1": 0.889,
+      "GDP_h4": 0.7409,
+      "INF_h4": 1.0894,
+      "POLICY_h4": 1.2019,
+      "FX_h4": 0.7962
+    },
+    {
+      "spec": "CORE+WEALTH+OIL(x)",
+      "mean_h1": 0.9117,
+      "mean_h4": 0.8876,
+      "T_over_k": 2.1,
+      "stable": true,
+      "whiteness_p": 0.0438,
+      "passes": false,
+      "GDP_h1": 0.7178,
+      "INF_h1": 1.0375,
+      "POLICY_h1": 1.0611,
+      "FX_h1": 0.8302,
+      "GDP_h4": 0.695,
+      "INF_h4": 1.0448,
+      "POLICY_h4": 1.0186,
+      "FX_h4": 0.7918
+    }
+  ],
+  "phaseA_CW_COREOIL_vs_RW": {
+    "GDP": {
+      "CW": 1.401,
+      "p": 0.0807
+    },
+    "INF": {
+      "CW": 0.931,
+      "p": 0.1759
+    },
+    "POLICY": {
+      "CW": 2.219,
+      "p": 0.0132
+    },
+    "FX": {
+      "CW": 3.791,
+      "p": 0.0001
+    }
+  },
+  "phaseA_MCS": {
+    "GDP": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "RW"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "RW"
+    ],
+    "POLICY": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)",
+      "RW"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "CORE",
+      "CORE+OIL(x)",
+      "CORE+TFP(x)"
+    ]
+  },
+  "hp": {
+    "corr": 0.515,
+    "mean_abs_rev": 0.863,
+    "last8_abs_rev": 0.706,
+    "cyc_std": 1.073,
+    "pct_of_std": 65.8
+  },
+  "gap_vs_level": {
+    "level_mean3_h1": 0.9147,
+    "gap_mean3_h1": 0.9271,
+    "level_rate_own": 1.1276,
+    "gap_rate_own": 0.7483
+  },
+  "phaseC_table": [
+    {
+      "model": "AR(BIC)",
+      "mean_h1": 0.8488,
+      "mean_h4": 0.8269,
+      "GDP_h1": null
+    },
+    {
+      "model": "Ridge:small",
+      "mean_h1": 0.8768,
+      "mean_h4": 0.8784,
+      "GDP_h1": 0.7829
+    },
+    {
+      "model": "BVAR-Loose:small",
+      "mean_h1": 0.8771,
+      "mean_h4": 0.8859,
+      "GDP_h1": 0.8256
+    },
+    {
+      "model": "OLS:small",
+      "mean_h1": 0.8942,
+      "mean_h4": 0.9004,
+      "GDP_h1": 0.864
+    },
+    {
+      "model": "BVAR-Tight:small",
+      "mean_h1": 0.8949,
+      "mean_h4": 0.8838,
+      "GDP_h1": 0.6906
+    },
+    {
+      "model": "ENet:small",
+      "mean_h1": 0.9014,
+      "mean_h4": 0.8996,
+      "GDP_h1": 0.8096
+    },
+    {
+      "model": "LASSO:small",
+      "mean_h1": 0.9027,
+      "mean_h4": 0.8999,
+      "GDP_h1": 0.822
+    },
+    {
+      "model": "BVAR-Tight:wide",
+      "mean_h1": 0.9284,
+      "mean_h4": 0.8811,
+      "GDP_h1": 0.7422
+    },
+    {
+      "model": "Ridge:wide",
+      "mean_h1": 0.9647,
+      "mean_h4": 0.9288,
+      "GDP_h1": 0.9543
+    },
+    {
+      "model": "RW",
+      "mean_h1": 1.0,
+      "mean_h4": 1.0,
+      "GDP_h1": 1.0
+    },
+    {
+      "model": "LASSO:wide",
+      "mean_h1": 1.01,
+      "mean_h4": 1.1155,
+      "GDP_h1": 1.0997
+    },
+    {
+      "model": "ENet:wide",
+      "mean_h1": 1.0178,
+      "mean_h4": 0.9924,
+      "GDP_h1": 1.0158
+    },
+    {
+      "model": "OLS:wide(overfit)",
+      "mean_h1": 1.0536,
+      "mean_h4": 1.1488,
+      "GDP_h1": 1.2092
+    }
+  ],
+  "phaseC_MCS": {
+    "GDP": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "INF": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "POLICY": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "RW",
+      "Ridge:small",
+      "Ridge:wide"
+    ],
+    "FX": [
+      "AR(BIC)",
+      "BVAR-Loose:small",
+      "BVAR-Tight:small",
+      "BVAR-Tight:wide",
+      "ENet:small",
+      "ENet:wide",
+      "LASSO:small",
+      "LASSO:wide",
+      "OLS:small",
+      "OLS:wide(overfit)",
+      "Ridge:small",
+      "Ridge:wide"
+    ]
+  },
+  "phaseC_all_in_mcs": false,
+  "phaseD_table4_CORE": {
+    "GDP": {
+      "aq_h1": 0.8996,
+      "aq_h4": 0.7202,
+      "yoy_h1": 1.0387,
+      "yoy_h4": 0.8166
+    },
+    "INF": {
+      "aq_h1": 1.1821,
+      "aq_h4": 1.0793,
+      "yoy_h1": 1.1129,
+      "yoy_h4": 1.1516
+    },
+    "POLICY": {
+      "aq_h1": 1.2044,
+      "aq_h4": 1.1297,
+      "yoy_h1": 0.8402,
+      "yoy_h4": 1.1767
+    },
+    "FX": {
+      "aq_h1": 0.8861,
+      "aq_h4": 0.7978,
+      "yoy_h1": 0.8585,
+      "yoy_h4": 0.696
+    }
+  },
+  "phaseD_yoy_whiteness": {
+    "CORE": 0.0,
+    "CORE+INV": 0.0,
+    "CORE+CONS": 0.0,
+    "CORE+FISCAL": 0.0,
+    "CORE+EXPORTS": 0.0,
+    "CORE+WEALTH": 0.0,
+    "CORE+HOUSING": 0.0,
+    "CORE+OIL(x)": 0.0,
+    "CORE+TFP(x)": 0.0,
+    "CORE+WEALTH+OIL(x)": 0.0
+  },
+  "phaseD_yoy_all_fail_whiteness": true,
+  "phaseD_adf": {
+    "FX_yoy": 0.257,
+    "INF_yoy": 0.809
+  },
+  "provenance": {
+    "seed": 20260710,
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "statsmodels": "0.14.6",
+    "sklearn": "1.8.0",
+    "arch": "8.0.0",
+    "data_vintage": "2026-07-10 (FRED public CSV, cached)"
+  }
+}

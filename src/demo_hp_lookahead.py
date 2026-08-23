@@ -6,13 +6,18 @@ Quantify the HP-filter look-ahead problem on the US fed funds rate:
   - Hamilton (2018) regression filter as the recommended alternative
 For research/education. Not investment advice.
 """
+import os
 import warnings; warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd
 from pathlib import Path
 from statsmodels.tsa.filters.hp_filter import hpfilter
 
-DATA = Path("/home/claude/fred_data"); OUT = Path("/mnt/user-data/outputs")
-FIG = Path("/home/claude/figs"); FIG.mkdir(exist_ok=True)
+# repo-relative paths; override the root with REPRO_ROOT if you run from elsewhere.
+# fred_data/ and outputs/ are gitignored, so a re-run never clobbers committed artifacts.
+ROOT = Path(os.environ.get("REPRO_ROOT", Path(__file__).resolve().parent.parent))
+DATA = ROOT / "fred_data"; DATA.mkdir(parents=True, exist_ok=True)
+OUT = ROOT / "outputs"; OUT.mkdir(parents=True, exist_ok=True)
+FIG = OUT / "figs"; FIG.mkdir(parents=True, exist_ok=True)
 
 def load_q(sid):
     df = pd.read_csv(DATA/f"{sid}.csv"); df.columns=["date","value"]

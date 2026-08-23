@@ -16,6 +16,7 @@ Data: FRED public no-key CSV endpoint (fetched separately into ./fred_data).
 For research / education. Not investment advice.
 """
 
+import os
 import warnings, io, json
 warnings.filterwarnings("ignore")
 import numpy as np
@@ -26,11 +27,13 @@ from statsmodels.tsa.api import VAR
 from statsmodels.tsa.stattools import adfuller, kpss
 from statsmodels.tsa.vector_ar.vecm import coint_johansen
 
-ROOT = Path("/home/claude")
-DATA = ROOT / "fred_data"
-OUT  = Path("/mnt/user-data/outputs")
+# repo-relative paths; override the root with REPRO_ROOT if you run from elsewhere.
+# fred_data/ and outputs/ are gitignored, so a re-run never clobbers committed artifacts.
+ROOT = Path(os.environ.get("REPRO_ROOT", Path(__file__).resolve().parent.parent))
+DATA = ROOT / "fred_data"; DATA.mkdir(parents=True, exist_ok=True)
+OUT  = ROOT / "outputs"
 OUT.mkdir(parents=True, exist_ok=True)
-FIG  = ROOT / "figs"; FIG.mkdir(exist_ok=True)
+FIG  = OUT / "figs"; FIG.mkdir(parents=True, exist_ok=True)
 
 # ----------------------------------------------------------------------------
 # 1. SERIES MAP  (id -> how to make it stationary)

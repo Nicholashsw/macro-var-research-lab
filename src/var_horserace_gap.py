@@ -12,6 +12,7 @@ GDP, INF, FX. The rate's own forecast is reported separately (level-RMSE and
 gap-RMSE are not comparable, so the rate is never mixed into the cross-model rank).
 Research/education. Not investment advice.
 """
+import os
 import warnings, json; warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd
 from pathlib import Path
@@ -19,8 +20,12 @@ from scipy import stats
 from statsmodels.tsa.api import VAR
 from statsmodels.tsa.filters.hp_filter import hpfilter
 
-DATA = Path("/home/claude/fred_data"); OUT = Path("/mnt/user-data/outputs")
-FIG = Path("/home/claude/figs"); FIG.mkdir(exist_ok=True)
+# repo-relative paths; override the root with REPRO_ROOT if you run from elsewhere.
+# fred_data/ and outputs/ are gitignored, so a re-run never clobbers committed artifacts.
+ROOT = Path(os.environ.get("REPRO_ROOT", Path(__file__).resolve().parent.parent))
+DATA = ROOT / "fred_data"; DATA.mkdir(parents=True, exist_ok=True)
+OUT = ROOT / "outputs"; OUT.mkdir(parents=True, exist_ok=True)
+FIG = OUT / "figs"; FIG.mkdir(parents=True, exist_ok=True)
 
 CORE_COMMON = {"GDP": ("GDPC1","growth"), "INF": ("PCEPILFE","growth"), "FX": ("RBUSBIS","growth")}
 RATE_LEVEL  = ("FEDFUNDS","level")
@@ -124,12 +129,12 @@ def companion_max(res):
 def full_diag(endog_names,exog_names):
     en=panel[endog_names].values; ex=panel[exog_names].values if exog_names else None
     res=fit_var(en,ex); k,p=res.neqs,res.k_ar
-    nparм=k*(k*p+1)+(k*len(exog_names) if exog_names else 0); T=res.nobs
+    nparm=k*(k*p+1)+(k*len(exog_names) if exog_names else 0); T=res.nobs
     try: stable=bool(res.is_stable(verbose=False))
     except Exception: stable=companion_max(res)<1.0
     try: wh=res.test_whiteness(nlags=max(p+4,10),adjusted=True).pvalue
     except Exception: wh=np.nan
-    return {"var_lag":p,"n_params":nparм,"T":T,"dof":T/nparм,"stable":stable,
+    return {"var_lag":p,"n_params":nparm,"T":T,"dof":T/nparm,"stable":stable,
             "maxmod":companion_max(res),"wh":wh,"aic":float(res.aic),"bic":float(res.bic)}
 
 # ---- forward selection for a given core ----
@@ -242,7 +247,7 @@ plt.colorbar(im,ax=ax,shrink=0.6,label="RMSE / RW"); plt.tight_layout()
 plt.savefig(FIG/"gap_vs_level_heatmap.png",dpi=140,bbox_inches="tight"); plt.close()
 (OUT/"gap_vs_level_heatmap.png").write_bytes((FIG/"gap_vs_level_heatmap.png").read_bytes())
 summary={"sample":f"{panel.index.min().date()} to {panel.index.max().date()}","n":N,
-         "lvl_forward_winner":[p[0] for p in [(\"LVL:core\",0)]]+[x for x in wl['endog'] if x not in CORE_LVL]+[x+'(x)' for x in wl['exog']],
+         "lvl_forward_winner":[x for x in wl["endog"] if x not in CORE_LVL]+[x+"(x)" for x in wl["exog"]],
          "gap_forward_winner":[x for x in wg['endog'] if x not in CORE_GAP]+[x+'(x)' for x in wg['exog']],
          "best_eligible":elig.iloc[0]["model_id"],"mcs_h1":mcs_inc}
 (OUT/"var_horserace_gap_summary.json").write_text(json.dumps(summary,indent=2,default=str))

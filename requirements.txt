@@ -1,12 +1,16 @@
+# Loose pins: any recent release of these works for the studies in this repo.
+# For the exact versions behind results/reproduce_results.json see requirements-reference.txt.
+numpy>=1.26
 pandas>=2.0
-numpy>=1.24
 scipy>=1.11
 statsmodels>=0.14
 scikit-learn>=1.3
-xgboost>=2.0
-fredapi>=0.5
-pyarrow>=14.0
-pyyaml>=6.0
+arch>=6.3               # Model Confidence Set, Diebold-Mariano
 matplotlib>=3.7
-seaborn>=0.13
-jupyter>=1.0
+openpyxl>=3.1           # HLW / Kaenzig / Bauer-Swanson workbooks, Fernald TFP
+pyarrow>=14.0           # parquet comparison tables (study 3)
+pyyaml>=6.0             # src/*.yaml information-set definitions
+xgboost>=2.0            # src/ml.py only
+fredapi>=0.5            # src/fetch_fred.py (keyless public CSV path needs no key)
+requests>=2.31
+jupyter>=1.0            # to open the shipped notebooks

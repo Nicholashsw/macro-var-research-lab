@@ -17,6 +17,7 @@ BVAR Minnesota via dummy observations (Banbura-Giannone-Reichlin 2010); point
 forecast = posterior mean = OLS on data augmented with prior dummies.
 Research/education. Not investment advice.
 """
+import os
 import warnings, json; warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd
 from pathlib import Path
@@ -24,8 +25,12 @@ from scipy import stats
 from sklearn.linear_model import RidgeCV, LassoCV, ElasticNetCV
 from sklearn.model_selection import TimeSeriesSplit
 
-DATA = Path("/home/claude/fred_data"); OUT = Path("/mnt/user-data/outputs")
-FIG = Path("/home/claude/figs"); FIG.mkdir(exist_ok=True)
+# repo-relative paths; override the root with REPRO_ROOT if you run from elsewhere.
+# fred_data/ and outputs/ are gitignored, so a re-run never clobbers committed artifacts.
+ROOT = Path(os.environ.get("REPRO_ROOT", Path(__file__).resolve().parent.parent))
+DATA = ROOT / "fred_data"; DATA.mkdir(parents=True, exist_ok=True)
+OUT = ROOT / "outputs"; OUT.mkdir(parents=True, exist_ok=True)
+FIG = OUT / "figs"; FIG.mkdir(parents=True, exist_ok=True)
 P = 2  # VAR lag order, fixed at Phase-1-selected value for every model class
 
 # ---------- design / estimator helpers (importable without running) ----------
@@ -169,6 +174,7 @@ if __name__ == "__main__":
         ("ENet:wide","enet",WIDE,WIDE_X,{}),
     ]
 
+    h_max=max(H_LIST)
     def run_spec(family,endog_names,exog_names,hp):
         store={h:{} for h in H_LIST}
         delta=delta_of(endog_names); tgt_idx={t:endog_names.index(t) for t in TARGETS}
@@ -195,7 +201,6 @@ if __name__ == "__main__":
                     for t in TARGETS: store[h].setdefault(t,{})[i]=np.nan
         return store
 
-    h_max=max(H_LIST)
     results={}
     for label,fam,en,ex,hp in SPECS:
         print(f"  running {label} ...", flush=True)

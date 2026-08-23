@@ -7,9 +7,28 @@ env/
 .env
 *.log
 .DS_Store
-data/raw/
 *.xlsm
 *.xlsx
+
+# fetched at run time (public, keyless) and regenerated outputs; never committed
+data/raw/
 fred_data/
+repro/
 outputs/
+
+# study-2 spreadsheet exports are not redistributed (see studies/bvar_shocks_density/DATA.md)
+studies/bvar_shocks_density/data/
+
+# study-3 data is fetched at run time (public, keyless); never committed
+studies/varx_permutation_study/data/*
+!studies/varx_permutation_study/data/README.md
+
+# parquet is generally an output format here, but study 3 ships its small
+# comparison tables (~47 KB total) so the reported figures can be re-derived
 *.parquet
+!studies/varx_permutation_study/results/*.parquet
+
+# study-3 pipeline intermediates written into the working directory by the runners
+studies/varx_permutation_study/src/payload.json
+studies/varx_permutation_study/src/*.png
+studies/varx_permutation_study/src/*_stats.json

@@ -1,0 +1,19 @@
+# Exact environment of the reference run recorded in
+# results/reproduce_results.json["provenance"] (seed 20260710,
+# FRED data vintage 2026-07-10).
+#
+# Use this to reproduce the committed numbers bit for bit:
+#     python -m venv .venv && . .venv/bin/activate
+#     pip install -r requirements-reference.txt
+#     python src/reproduce.py
+#
+# Reference interpreter: CPython 3.12.3
+numpy==2.4.4
+pandas==3.0.2
+statsmodels==0.14.6
+scikit-learn==1.8.0
+arch==8.0.0
+#
+# scipy, matplotlib and openpyxl are required but were not version-stamped by
+# the reference run; any release satisfying requirements.txt reproduces the
+# reported statistics.
