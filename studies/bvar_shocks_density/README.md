@@ -43,10 +43,21 @@ src/fetch_g7.py          FRED pulls for the G7 extension
 results/                 eval_multi_us.csv, panel_metrics.csv, rolling_density_eval.csv,
                          gdp_sv_path.csv, benchmark_REAL_final.csv
 figures/                 fig_crps.pdf, fig_lp.pdf, fig_panel.pdf, fig_sv.pdf, gdp_sv_path.png
-notebooks/               US_VAR_addons.ipynb
+notebooks/               US_VAR_addons.ipynb  (source only, no stored outputs -- see note below)
 docs/                    methodology review
 paper/                   US_VAR_IEEE_paper.pdf, US_VAR_IEEE_paper.tex, IEEEtran.cls
 ```
+
+## Notebook status
+
+`notebooks/US_VAR_addons.ipynb` is a **source/reproduction notebook and ships with no stored cell
+outputs**; it is not an executed record. The reproducible path for this study is the `src/` modules
+(`shock_builder.py`, `var_advanced.py`, `sv_univariate.py`, `eval_multi.py`, `panel.py`), and the
+executed evidence is the committed tables in `results/` (`eval_multi_us.csv`,
+`rolling_density_eval.csv`, `panel_metrics.csv`, `gdp_sv_path.csv`, `benchmark_REAL_final.csv`),
+which are what the paper cites. The endogenous block and the G7 panel rebuild from public FRED
+series via `fetch_g7.py`; the shock-input spreadsheet exports used in the original run are not
+redistributed (see `DATA.md`).
 
 ## Building the paper
 

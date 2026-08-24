@@ -46,8 +46,19 @@ pip install -r requirements.txt
 python src/reproduce.py            # pulls FRED + FRBSF TFP if not cached in fred_data/, seed 20260710
 ```
 
-Re-executed on 2026-08-21 against a fresh FRED pull: the specification search (winner `CORE+OIL(x)`,
-forward path 1.0431 → 0.9452 → 0.9117) and the model-class table reproduce identically; the HP
+**Which number is the result.** The greedy forward path, *before* the validity gates are applied,
+runs 1.0431 (`CORE`) → 0.9452 (`CORE+WEALTH`) → 0.9117 (`CORE+WEALTH+OIL(x)`) in mean relative RMSE
+at h=1. Neither wealth specification is admissible: `CORE+WEALTH` fails the parsimony gate
+(T/k = 2.29) and `CORE+WEALTH+OIL(x)` fails both parsimony (T/k = 2.10) and residual whiteness
+(p = 0.044). The **eligible winner — the specification used throughout the paper — is `CORE+OIL(x)`
+at 0.9679 (h=1) and 0.8786 (h=4)**. The rejected 0.9117 is reported precisely *because* it is the
+best raw score in the run: it is the case that demonstrates the hard filters overruling
+out-of-sample RMSE, which is the point of Study 1. Full per-specification detail is in
+`results/reproduce_results.json` (`phaseA_table`).
+
+Re-executed on 2026-08-21 against a fresh FRED pull: the specification search (eligible winner
+`CORE+OIL(x)`, and the same greedy path and gate rejections above) and the model-class table
+reproduce identically; the HP
 revision statistic (66.3% vs 65.8%) and the Johansen trace move in the second decimal because the
 reference run used a frozen 2026-07-10 FRED vintage and later vintages carry data revisions. `results/reproduce_results.json`
 records the library versions of the reference run (numpy 2.4.4, pandas 3.0.2, statsmodels 0.14.6,
